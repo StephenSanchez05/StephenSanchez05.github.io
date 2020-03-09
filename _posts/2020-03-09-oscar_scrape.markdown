@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Oscar Scrape"
-date:       2020-03-09 20:00:13 +0000
+date:       2020-03-09 16:00:14 -0400
 permalink:  oscar_scrape
 ---
 
