@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Finding Serenity in Rails"
-date:       2020-05-15 18:50:41 +0000
+date:       2020-05-15 14:50:42 -0400
 permalink:  finding_serenity_in_rails
 ---
 
