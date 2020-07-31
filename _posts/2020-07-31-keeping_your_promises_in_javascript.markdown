@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Keeping your Promises in Javascript"
-date:       2020-07-31 16:11:43 +0000
+date:       2020-07-31 12:11:44 -0400
 permalink:  keeping_your_promises_in_javascript
 ---
 
@@ -25,4 +25,4 @@ const myPromise =
 	
 In plain speak the const above is saying wait until the promise is executed, once thats executed perform (handleFulfilledA), once thats done perform (handleFulfilledB), etc.  At the bottom you'll see a .catch() method.  This is to handle the third state of a promise object, Rejected.
 	
-The Rejected, or reject(), state is essentially a broken promise.  Whatever action you wanted the promise to execute was not possible.  Instead of letting the code just fall to pieces, .catch() will catch the broken pieces and perform its method.  Most of the time an error object is passed to display what went wrong with the promise.  This is optional but it certainly a good practice to include .catch() methods in all your promises.
+The Rejected, or reject(), state is essentially a broken promise.  Whatever action you wanted the promise to execute was not possible.  Instead of letting the code just fall to pieces, .catch() will catch the broken pieces and perform the method.  Most of the time an error object is passed to display what went wrong with the promise.  This is optional but it certainly a good practice to include .catch() methods in all your promises.
