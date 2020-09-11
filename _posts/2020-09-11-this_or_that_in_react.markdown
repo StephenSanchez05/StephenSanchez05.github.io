@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "This or That in React"
-date:       2020-09-11 19:41:22 +0000
+date:       2020-09-11 15:41:22 -0400
 permalink:  this_or_that_in_react
 ---
 
@@ -26,15 +26,13 @@ Here is an app with a simple idea.  I want the user to type in a word into an in
       }
 			
 			
-			And here is my handleSubmit funciton.  As you can see once the user hits submit the handleSubmit function will call on the fetchGifs function, it will wait 300 ms (to allow the fetch request to occur) and then upload the gif state to the database using a function called this.props.postGif from my actions folder:
+			And here is my handleSubmit funciton.  As you can see once the user hits submit the handleSubmit function will call on the fetchGifs function, and then upload the gif state to the database using a function called this.props.postGif from my actions folder:
 			
 handleSubmit = event => {
             event.preventDefault();
             this.fetchGifs();
             console.log(this.state)
-            setTimeout(() => {
             this.props.postGif({url: this.state.gifs[0]})
-            }, 300);
             this.setState({
                 query: '',
             });
